@@ -1,0 +1,21 @@
+<div class="body">
+    <% if current_user %>
+      <div></div>
+      <button class= "button" type="button" name="button"> <%= link_to "New String", new_search_path %> </button>
+      <br>
+      <div class="text-bg">
+      <p>Current String: [<%= @input %>]</p>
+      <br>
+      <p> Words in Current String: [<% @output.each do |out| %>
+                <%= out %>
+               <% end %>]</p>
+      </div>
+      <br>
+    <% else %>
+      <p class= "sign-in-greeting">
+        Hello friend 😬
+        <br>
+        Please Sign In To Search The Simple Dictionary 📖
+      </p>
+    <% end %>
+</div>

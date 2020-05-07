@@ -1,0 +1,26 @@
+<div class="body">
+  <% if @search.errors %>
+    <div name="errorDiv">
+      <ul name= "errors">
+        <% @search.errors.full_messages.each do |message|%>
+          <li> <%= message %> </li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div>
+    <p>*please enter lowercase letters</p>
+    <%= form_for [@search] do |f| %>
+      <div class="field">
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+      </div>
+      <div class="actions">
+        <%= f.submit "Submit", :class => 'submit' %>
+      </div>
+    <% end %>
+  </div>
+  <p></p>
+  <p>Search Rules</p>
+  <p>The string submitted on this page will be run against the Simple Dictionary and return all words in order of appearance within the string. If words start at the same point in the string, nouns are listed first, then verbs and finally articles. Order does not matter in the same categories.</p>
+</div>
