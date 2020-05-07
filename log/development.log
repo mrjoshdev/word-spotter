@@ -11129,3 +11129,233 @@ Processing by SearchesController#index as HTML
 Completed 200 OK in 205ms (Views: 185.2ms | ActiveRecord: 3.1ms)
 
 
+Started GET "/" for 127.0.0.1 at 2020-05-07 15:36:42 -0400
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/joshwyman/.rubies/ruby-2.4.5/lib/ruby/gems/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13
+Processing by SearchesController#index as HTML
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/searches_controller.rb:7
+  [1m[36mSearch Load (1.9ms)[0m  [1m[34mSELECT "searches".* FROM "searches"[0m
+  ↳ app/controllers/searches_controller.rb:8
+  [1m[36mWord Load (1.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  ↳ app/controllers/searches_controller.rb:38
+  Rendering searches/index.html.erb within layouts/application
+  Rendered searches/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 2994ms (Views: 2841.4ms | ActiveRecord: 24.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-07 15:36:48 -0400
+Processing by SearchesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/searches_controller.rb:7
+  [1m[36mSearch Load (0.5ms)[0m  [1m[34mSELECT "searches".* FROM "searches"[0m
+  ↳ app/controllers/searches_controller.rb:8
+  [1m[36mWord Load (0.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  ↳ app/controllers/searches_controller.rb:38
+  Rendering searches/index.html.erb within layouts/application
+  Rendered searches/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 128ms (Views: 119.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-07 15:36:50 -0400
+Processing by SearchesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/searches_controller.rb:7
+  [1m[36mSearch Load (0.5ms)[0m  [1m[34mSELECT "searches".* FROM "searches"[0m
+  ↳ app/controllers/searches_controller.rb:8
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  ↳ app/controllers/searches_controller.rb:38
+  Rendering searches/index.html.erb within layouts/application
+  Rendered searches/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 107ms (Views: 96.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-07 15:36:54 -0400
+Processing by SearchesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/searches_controller.rb:7
+  [1m[36mSearch Load (0.5ms)[0m  [1m[34mSELECT "searches".* FROM "searches"[0m
+  ↳ app/controllers/searches_controller.rb:8
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  ↳ app/controllers/searches_controller.rb:38
+  Rendering searches/index.html.erb within layouts/application
+  Rendered searches/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 122ms (Views: 111.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/searches/new" for 127.0.0.1 at 2020-05-07 15:36:55 -0400
+Processing by SearchesController#new as HTML
+  Rendering searches/new.html.erb within layouts/application
+  Rendered searches/new.html.erb within layouts/application (80.3ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:27
+Completed 200 OK in 206ms (Views: 201.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-07 15:37:16 -0400
+Processing by SearchesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/searches_controller.rb:7
+  [1m[36mSearch Load (0.5ms)[0m  [1m[34mSELECT "searches".* FROM "searches"[0m
+  ↳ app/controllers/searches_controller.rb:8
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  ↳ app/controllers/searches_controller.rb:38
+  Rendering searches/index.html.erb within layouts/application
+  Rendered searches/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 108ms (Views: 97.1ms | ActiveRecord: 1.9ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-05-07 15:37:19 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9BYrwe3MPkopbYaju8habELGgyDYpqrt5HCW+UioSwW2EA3basNmGr/b8cLU0tpmAbMebfv3V6oOYz834+Dc8Q=="}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/joshwyman/.rubies/ruby-2.4.5/lib/ruby/gems/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/joshwyman/.rubies/ruby-2.4.5/lib/ruby/gems/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/joshwyman/.rubies/ruby-2.4.5/lib/ruby/gems/2.4.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13
+Redirected to http://localhost:3000/
+Completed 302 Found in 36ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-07 15:37:19 -0400
+Processing by SearchesController#index as HTML
+  [1m[36mSearch Load (0.5ms)[0m  [1m[34mSELECT "searches".* FROM "searches"[0m
+  ↳ app/controllers/searches_controller.rb:16
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  ↳ app/controllers/searches_controller.rb:38
+  Rendering searches/index.html.erb within layouts/application
+  Rendered searches/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 99ms (Views: 88.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-07 15:37:39 -0400
+Processing by SearchesController#index as HTML
+  [1m[36mSearch Load (0.7ms)[0m  [1m[34mSELECT "searches".* FROM "searches"[0m
+  ↳ app/controllers/searches_controller.rb:16
+  [1m[36mWord Load (0.6ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  ↳ app/controllers/searches_controller.rb:38
+  Rendering searches/index.html.erb within layouts/application
+  Rendered searches/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 103ms (Views: 93.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-05-07 15:37:44 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (52.9ms)
+Completed 200 OK in 156ms (Views: 148.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/words" for 127.0.0.1 at 2020-05-07 15:37:45 -0400
+Processing by WordsController#index as HTML
+  [1m[36mWord Load (0.8ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  ↳ app/controllers/words_controller.rb:18
+  Rendering words/index.html.erb within layouts/application
+  Rendered words/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 146ms (Views: 139.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-05-07 15:37:48 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 110ms (Views: 107.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-07 15:37:51 -0400
+Processing by SearchesController#index as HTML
+  [1m[36mSearch Load (1.6ms)[0m  [1m[34mSELECT "searches".* FROM "searches"[0m
+  ↳ app/controllers/searches_controller.rb:16
+  [1m[36mWord Load (1.3ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  ↳ app/controllers/searches_controller.rb:38
+  Rendering searches/index.html.erb within layouts/application
+  Rendered searches/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 130ms (Views: 89.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-07 15:51:09 -0400
+Processing by SearchesController#index as HTML
+  [1m[36mSearch Load (2.4ms)[0m  [1m[34mSELECT "searches".* FROM "searches"[0m
+  ↳ app/controllers/searches_controller.rb:16
+  [1m[36mWord Load (1.4ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  ↳ app/controllers/searches_controller.rb:38
+  Rendering searches/index.html.erb within layouts/application
+  Rendered searches/index.html.erb within layouts/application (4.9ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: 3224c4b2b11d7adaaaa6
+Version: webpack 3.12.0
+Time: 1340ms
+                                  Asset       Size  Chunks             Chunk Names
+    application-a9a1be0fb6614ca90c32.js    3.09 kB       0  [emitted]  application
+application-a9a1be0fb6614ca90c32.js.map    2.49 kB       0  [emitted]  application
+                          manifest.json  142 bytes          [emitted]  
+   [0] ./app/javascript/packs/application.js 342 bytes {0} [built] [failed] [1 error]
+
+ERROR in ./app/javascript/packs/application.js
+Module build failed: SyntaxError: Unexpected token (14:15)
+
+  12 |     if(window.railsEnv && window.railsEnv === 'development'){
+  13 |       try {
+> 14 |         render(<App>, reactElement)
+     |                ^
+  15 |       } catch (e) {
+  16 |         render(<RedBox error={e}>, reactElement)
+  17 |       }
+
+
+Completed 200 OK in 4335ms (Views: 4295.3ms | ActiveRecord: 17.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-07 15:54:39 -0400
+Processing by SearchesController#index as HTML
+  [1m[36mSearch Load (1.0ms)[0m  [1m[34mSELECT "searches".* FROM "searches"[0m
+  ↳ app/controllers/searches_controller.rb:16
+  [1m[36mWord Load (0.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  ↳ app/controllers/searches_controller.rb:38
+  Rendering searches/index.html.erb within layouts/application
+  Rendered searches/index.html.erb within layouts/application (1.7ms)
+[Webpacker] Compiling…
+Started GET "/" for 127.0.0.1 at 2020-05-07 15:54:41 -0400
+Processing by SearchesController#index as HTML
+  [1m[36mSearch Load (1.8ms)[0m  [1m[34mSELECT "searches".* FROM "searches"[0m
+  ↳ app/controllers/searches_controller.rb:16
+  [1m[36mWord Load (1.5ms)[0m  [1m[34mSELECT "words".* FROM "words"[0m
+  ↳ app/controllers/searches_controller.rb:38
+  Rendering searches/index.html.erb within layouts/application
+  Rendered searches/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 174ms (Views: 143.1ms | ActiveRecord: 17.8ms)
+
+
+[Webpacker] Compilation failed:
+
+Hash: d0a9d85749cc7293cbfb
+Version: webpack 3.12.0
+Time: 2113ms
+                                  Asset       Size  Chunks                    Chunk Names
+    application-e9be99dce9be04ccd2d5.js     914 kB       0  [emitted]  [big]  application
+application-e9be99dce9be04ccd2d5.js.map    1.04 MB       0  [emitted]         application
+                          manifest.json  142 bytes          [emitted]         
+  [83] ./app/javascript/packs/application.js 498 bytes {0} [built]
+    + 190 hidden modules
+
+ERROR in ./app/javascript/react/components/app.js
+Module build failed: SyntaxError: Unexpected token (4:10)
+
+  2 | 
+  3 | export const App = (props) => {
+> 4 |   return (<h1>Make It So React</h1>)
+    |           ^
+  5 | }
+  6 | 
+  7 | export default App
+
+ @ ./app/javascript/packs/application.js 5:0-42
+
+Completed 200 OK in 3973ms (Views: 3961.9ms | ActiveRecord: 1.5ms)
+
+

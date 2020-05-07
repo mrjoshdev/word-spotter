@@ -11,13 +11,13 @@ document.addEventListener('DOMContentLoaded', () => {
   if (reactElement) {
     if(window.railsEnv && window.railsEnv === 'development'){
       try {
-        render(<App />, reactElement)
+        render(App, reactElement)
       } catch (e) {
-        render(<RedBox error={e} />, reactElement)
+        render(RedBox) ()
       }
     }
     else {
-      render(<App />, reactElement)
+      render(App, reactElement)
     }
   }
 })
