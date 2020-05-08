@@ -1,10 +1,10 @@
-# WordFinder Readme
+# WordSpotter Readme
 
-WordFinder is an application that allows users to enter a random string into a search field and then see which words from the Annkissam Dictionary are contained in that string.
+WordSpotter is an application that allows users to enter a random string into a search field and then see which words from the Simple Dictionary are contained in that string.
 
 ### Assumptions
 
-While building this application I assume that the Annkissam dictionary won't be updated, and the Nouns, Verbs and Articles provided are the complete Annkissam dictionary.
+While building this application I assume that the Simple Dictionary won't be updated, and the Nouns, Verbs and Articles provided are the complete Simple dictionary.
 
 ### Installation
 
@@ -16,7 +16,7 @@ run `bundle install` & `yarn install` from the terminal
 
 * Database creation
 
-There is seed data that is necessary to run this program because it contains the Annkissam Dictionary. please copy and paste the following into your terminal and run it `bundle exec rake db:create && bundle exec rake db:migrate && bundle exec rake db:seed`
+There is seed data that is necessary to run this program because it contains the Simple Dictionary. please copy and paste the following into your terminal and run it `bundle exec rake db:create && bundle exec rake db:migrate && bundle exec rake db:seed`
 
 Run `rails server` from the terminal and then open `localhost:3000` in your browser
 
